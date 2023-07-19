@@ -38,4 +38,4 @@
 </ul>
 
 ## Originality
-Our Project is fully Original.
+We did not find any project similar to ours.
