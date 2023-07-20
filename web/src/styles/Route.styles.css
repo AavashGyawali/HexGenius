@@ -1,0 +1,7 @@
+.box2{
+    display: flex;
+    width: 100%;
+    background-color: #d9d9d98d;
+    height: 300px;
+    backdrop-filter: blur(5px);
+}

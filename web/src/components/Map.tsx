@@ -11,28 +11,22 @@ import "leaflet/dist/leaflet.css";
 
 import React, { useRef, useState } from "react";
 
-import L from "leaflet";
+import L, { LatLng } from "leaflet";
 import "leaflet-routing-machine";
 
 interface Props {
   setAddress: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const center = {
-  lat: 27.7172,
-  lng: 85.324,
-};
+const center = L.latLng(27.7172, 85.324);
 
 const GetCods: React.FC<Props> = ({ setAddress }) => {
   const map = useMap();
 
   const markerRef = useRef<L.Marker<any>>(null);
-  const [position, setPosition] = useState(center);
+  const [waypoints, setWaypoints] = useState<LatLng[]>([center]);
   L.Routing.control({
-    waypoints: [
-      L.latLng(position.lat, position.lng),
-      L.latLng(27.671, 85.4298),
-    ],
+    waypoints: [...waypoints, L.latLng(center.lat, center.lng)],
     lineOptions: {
       styles: [{ color: "black" }],
       extendToWaypoints: false,
@@ -57,10 +51,7 @@ const GetCods: React.FC<Props> = ({ setAddress }) => {
     click(e) {
       console.log(e.latlng);
 
-      setPosition({
-        lat: e.latlng.lat,
-        lng: e.latlng.lng,
-      });
+      setWaypoints([...waypoints, L.latLng(e.latlng.lat, e.latlng.lng)]);
     },
   });
 
