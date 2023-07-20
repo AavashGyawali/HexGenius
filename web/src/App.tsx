@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Map from "./components/Map";
 import Searchbar from "./Searchbar";
+import Route from "./Route";
 import "./App.css";
 
 function App() {
@@ -24,7 +25,14 @@ function App() {
         }}
       >
         <Map setAddress={setAddress} />
-      
+      </div>
+      <div style={{
+        position:'absolute',
+        bottom:'0px',
+        width:'100%',
+        zIndex:'500',
+      }}>
+        <Route/>
       </div>
     </div>
   );
