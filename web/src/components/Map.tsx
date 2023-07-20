@@ -5,6 +5,7 @@ import {
   TileLayer,
   useMap,
   useMapEvents,
+  //   useMapEvents,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -52,16 +53,16 @@ const GetCods: React.FC<Props> = ({ setAddress }) => {
       console.log(isBusStationOnRoute);
     });
 
-  //   useMapEvents({
-  //     click(e) {
-  //       console.log(e.latlng);
+  useMapEvents({
+    click(e) {
+      console.log(e.latlng);
 
-  //       setPosition({
-  //         lat: e.latlng.lat,
-  //         lng: e.latlng.lng,
-  //       });
-  //     },
-  //   });
+      setPosition({
+        lat: e.latlng.lat,
+        lng: e.latlng.lng,
+      });
+    },
+  });
 
   return (
     <Marker position={center} ref={markerRef} draggable={false}>
