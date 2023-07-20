@@ -4,4 +4,17 @@
     background-color: #d9d9d98d;
     height: 300px;
     backdrop-filter: blur(5px);
+    flex-direction: column;
+}
+.trace{
+    padding: 20px 10px;
+    color: #56328C;
+    font-weight: bold;
+}
+.route{
+    display: flex;
+    height: 10vh;
+}
+.number{
+    
 }
