@@ -1,75 +1,106 @@
 {
     "Kalanki": {
-      "Bhaktapur Blue Bus": ["Khasi bazar"]
+      "Bhaktapur Blue Bus": ["Khasi bazar"],
+      "Mahanagar Yatayat": ["Khasi bazar"],
+      "B1": []
     },
     "Khasi bazar": {
-        "Bhaktapur Blue Bus": ["Advance College", "Kalanki"]
+        "Bhaktapur Blue Bus": ["Kalanki","Advance College"],
+        "Mahanagar Yatayat": ["Kalanki", "Advance College"]
     },
     "Advance College": {
-        "Bhaktapur Blue Bus": ["Khasi bazar", "Balkhu"]
+        "Bhaktapur Blue Bus": ["Khasi bazar", "Balkhu"],
+        "Mahanagar Yatayat": ["Khasi bazar", "Balkhu"]
+
     },
     "Balkhu": {
-        "Bhaktapur Blue Bus": ["Advance College", "Sanepa"]
+        "Bhaktapur Blue Bus": ["Advance College", "Sanepa"],
+        "Mahanagar Yatayat": ["Advance College", "Sanepa"]
+
     },
     "Sanepa": {
-        "Bhaktapur Blue Bus": ["Balkhu", "Star Hospital"]
+        "Bhaktapur Blue Bus": ["Balkhu", "Star Hospital"],
+        "Mahanagar Yatayat": ["Balkhu", "Star Hospital"]
     },
     "Star Hospital": {
-        "Bhaktapur Blue Bus": ["Sanepa", "Dhobighat"]
+        "Bhaktapur Blue Bus": ["Sanepa", "Dhobighat"],
+        "Mahanagar Yatayat": ["Sanepa", "Dhobighat"]
     },
     "Dhobighat": {
-        "Bhaktapur Blue Bus": ["Star Hospital",  "Baghdol"]
+        "Bhaktapur Blue Bus": ["Star Hospital",  "Baghdol"],
+        "Mahanagar Yatayat": ["Star Hospital", "Baghdol"]
 
     },
     "Baghdol": {
-        "Bhaktapur Blue Bus": ["Dhobighat",  "Nakhkhu"]
+        "Bhaktapur Blue Bus": ["Dhobighat",  "Nakhkhu"],
+        "Mahanagar Yatayat": ["Dhobighat", "Nakhkhu"]
     },
     "Nakhkhu": {
-        "Bhaktapur Blue Bus": [ "Baghdol",  "Ekantakuna"]
+        "Bhaktapur Blue Bus": [ "Baghdol",  "Ekantakuna"],
+        "Mahanagar Yatayat": ["Baghdol", "Ekantakuna"]
     },
     "Ekantakuna": {
-        "Bhaktapur Blue Bus": [ "Nakhkhu",  "Kushunti"]
+        "Bhaktapur Blue Bus": [ "Nakhkhu",  "Kushunti"],
+        "Mahanagar Yatayat": ["Nakhkhu", "Kushunti"]
     },
     "Kushunti": {
-      "cords": [27.665300, 85.313007]
+      "Bhaktapur Blue Bus": [ "Ekantakuna",  "Thasikhel"],
+      "Mahanagar Yatayat": ["Ekantakuna", "Thasikhel"]
+
     },
     "Thasikhel": {
-      "cords": [27.662964, 85.316282]
+      "Bhaktapur Blue Bus": [ "Kushunti",  "Mahalaxmisthan"],
+      "Mahanagar Yatayat": ["Kushunti", "Mahalaxmisthan"]
+
     },
     "Mahalaxmisthan": {
-      "cords": [27.661503, 85.318131]
+      "Bhaktapur Blue Bus": [ "Thasikhel",  "Talchikhela"],
+      "Mahanagar Yatayat": ["Thasikhel", "Talchikhela"]
+
     },
-    "talchikhela": {
-      "cords": [27.659187, 85.320816]
+    "Talchikhela": {
+      "Bhaktapur Blue Bus": [  "Mahalaxmisthan",  "Chapagaun Dobato"],
+      "Mahanagar Yatayat": ["Mahalaxmisthan", "Chapagaun Dobato"]
+      
     },
-    "chapagaun dobato": {
-      "cords": [27.658248, 85.322135]
+    "Chapagaun Dobato": {
+      "Bhaktapur Blue Bus": [  "Talchikhela",  "Satdobato"],
+      "Mahanagar Yatayat": ["Talchikhela", "Satdobato"]
+
     },
     "Satdobato": {
-      "cords": [27.658739, 85.324738]
+      "Bhaktapur Blue Bus": [ "Chapagaun Dobato",  "ANFA"],
+      "Mahanagar Yatayat": ["Chapagaun Dobato", "ANFA"]
+
     },
     "ANFA": {
-      "cords": [27.661973, 85.328342]
+      "Bhaktapur Blue Bus": ["Satdobato",  "B And B"],
+      "Mahanagar Yatayat": ["Satdobato", "B And B"]
     },
     "B And B": {
-      "cords": [27.664330, 85.330368]
+      "Bhaktapur Blue Bus": [ "ANFA",  "Gwarko"],
+      "Mahanagar Yatayat": ["ANFA", "Gwarko"]
     },
-    "GWARKO": {
-      "cords": [27.666698, 85.332170]
+    "Gwarko": {
+      "Bhaktapur Blue Bus": ["B And B", "Kharibot"],
+      "Mahanagar Yatayat": ["B And B", "Kharibot"]
     },
     "Kharibot": {
-      "cords": [27.670266, 85.338210]
+      "Bhaktapur Blue Bus": ["Gwarko", "Balkumari"],
+      "Mahanagar Yatayat": ["GWARKO", "Balkumari"]
     },
     "Balkumari": {
-      "cords": [27.672977, 85.341759]
+      "Bhaktapur Blue Bus": ["Kharibot", "Koteshwor"],
+      "Mahanagar Yatayat": ["Kharibot", "Koteshwor"]
     },
     "Koteshwor": {
-      "cords": [27.678673, 85.349323]
+      "Bhaktapur Blue Bus": ["Balkumari", "tinkune"],
+      "Mahanagar Yatayat": ["Balkumari", "tinkune"]
     },
-    "tinkune": {
+    "Tinkune": {
       "cords": [27.685891, 85.346119]
     },
-    "civil hospital": {
+    "Civil Hospital": {
       "cords": [27.687462, 85.338667]
     },
     "Banseshwor": {
@@ -78,22 +109,22 @@
     "Babar Mahal": {
       "cords": [27.692074, 85.324539]
     },
-    "maitighar": {
+    "Aitighar": {
       "cords": [27.693735, 85.321341]
     },
     "Tripureshwor": {
       "cords": [27.693568, 85.314334]
     },
-    "TEKU": {
+    "Teku": {
       "cords": [27.696247, 85.306967]
     },
-    "kalimati": {
+    "Kalimati": {
       "cords": [27.698386, 85.299445]
     },
-    "soltee mod": {
+    "Soltee Mod": {
       "cords": [27.696606, 85.293601]
     },
-    "thapathali": {
+    "Thapathali": {
         "cords": [27.693923, 85.319219]
       },
       "Kupandol": {
