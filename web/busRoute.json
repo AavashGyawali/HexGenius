@@ -1,47 +1,58 @@
 {
     "Kalanki": {
       "Bhaktapur Blue Bus": ["Khasi bazar"],
-      "Mahanagar Yatayat": ["Khasi bazar"],
-      "B1": []
+      "Mahanagar Yatayat": ["Khasi bazar"]
+      
     },
     "Khasi bazar": {
         "Bhaktapur Blue Bus": ["Kalanki","Advance College"],
         "Mahanagar Yatayat": ["Kalanki", "Advance College"]
+      
+
     },
     "Advance College": {
         "Bhaktapur Blue Bus": ["Khasi bazar", "Balkhu"],
         "Mahanagar Yatayat": ["Khasi bazar", "Balkhu"]
+   
+
 
     },
     "Balkhu": {
         "Bhaktapur Blue Bus": ["Advance College", "Sanepa"],
-        "Mahanagar Yatayat": ["Advance College", "Sanepa"]
+        "Mahanagar Yatayat": ["Advance College", "Sanepa"],
+        "Nepal Yatayat": ["Sanepa"]
 
     },
     "Sanepa": {
         "Bhaktapur Blue Bus": ["Balkhu", "Star Hospital"],
-        "Mahanagar Yatayat": ["Balkhu", "Star Hospital"]
+        "Mahanagar Yatayat": ["Balkhu", "Star Hospital"],
+        "Nepal Yatayat": ["Star Hospital"]
     },
     "Star Hospital": {
         "Bhaktapur Blue Bus": ["Sanepa", "Dhobighat"],
-        "Mahanagar Yatayat": ["Sanepa", "Dhobighat"]
+        "Mahanagar Yatayat": ["Sanepa", "Dhobighat"],
+        "Nepal Yatayat": ["Dhobighat"]
     },
     "Dhobighat": {
         "Bhaktapur Blue Bus": ["Star Hospital",  "Baghdol"],
-        "Mahanagar Yatayat": ["Star Hospital", "Baghdol"]
+        "Mahanagar Yatayat": ["Star Hospital", "Baghdol"],
+        "Nepal Yatayat": ["Baghdol"]
 
     },
     "Baghdol": {
         "Bhaktapur Blue Bus": ["Dhobighat",  "Nakhkhu"],
-        "Mahanagar Yatayat": ["Dhobighat", "Nakhkhu"]
+        "Mahanagar Yatayat": ["Dhobighat", "Nakhkhu"],
+        "Nepal Yatayat": ["Nakhkhu"]
     },
     "Nakhkhu": {
         "Bhaktapur Blue Bus": [ "Baghdol",  "Ekantakuna"],
-        "Mahanagar Yatayat": ["Baghdol", "Ekantakuna"]
+        "Mahanagar Yatayat": ["Baghdol", "Ekantakuna"],
+        "Nepal Yatayat": ["Ekantakuna"]
     },
     "Ekantakuna": {
         "Bhaktapur Blue Bus": [ "Nakhkhu",  "Kushunti"],
-        "Mahanagar Yatayat": ["Nakhkhu", "Kushunti"]
+        "Mahanagar Yatayat": ["Nakhkhu", "Kushunti"],
+        "Nepal Yatayat": ["Jawalakhel"]
     },
     "Kushunti": {
       "Bhaktapur Blue Bus": [ "Ekantakuna",  "Thasikhel"],
@@ -98,55 +109,56 @@
       "Mahanagar Yatayat": ["Balkumari", "tinkune"]
     },
     "Tinkune": {
-      "cords": [27.685891, 85.346119]
+      "Nepal Yatayat": ["Civil Hospital", "Koteshwor"]
     },
     "Civil Hospital": {
-      "cords": [27.687462, 85.338667]
+      "Nepal Yatayat": ["Banseshwor", "Tinkune"]
     },
     "Banseshwor": {
-      "cords": [27.688129, 85.335899]
+      "Nepal Yatayat": ["Maitighar", "Banseshwor"]
     },
     "Babar Mahal": {
-      "cords": [27.692074, 85.324539]
+      "Nepal Yatayat": ["Maitighar", "Banseshwor"]
     },
-    "Aitighar": {
-      "cords": [27.693735, 85.321341]
+    "Maitighar": {
+      "Nepal Yatayat": ["Thapathali", "Babar Mahal"]
+
     },
     "Tripureshwor": {
-      "cords": [27.693568, 85.314334]
+      "Nepal Yatayat": ["Teku"]
     },
     "Teku": {
-      "cords": [27.696247, 85.306967]
+      "Nepal Yatayat": ["Kalimati"]
     },
     "Kalimati": {
-      "cords": [27.698386, 85.299445]
+      "Nepal Yatayat": ["Balkhu"]
+
     },
     "Soltee Mod": {
       "cords": [27.696606, 85.293601]
     },
     "Thapathali": {
-        "cords": [27.693923, 85.319219]
+      "Nepal Yatayat": ["Maitighar", "Tripureshwor"]
       },
       "Kupandol": {
-        "cords": [27.687748, 85.316669]
+        "Nepal Yatayat": ["Thapathali"]
       },
-      "nabil bank(pulchowk)": {
-        "cords": [27.683449, 85.318695]
+      "Nabil Bank (Pulchowk)": {
+        "Nepal Yatayat": ["Kupandol"]
       },
-      "ioe dean gate": {
-        "cords": [27.681275, 85.317711]
+      "Ioe Dean Gate": {
+        "Nepal Yatayat": ["Nabil Bank (Pulchowk)"]
+
       },
-      "Sajha Petrol Pump(pulchowk)": {
-        "cords": [27.679488, 85.316965]
+      "Sajha Petrol Pump (Pulchowk)": {
+        "Nepal Yatayat": ["Ioe Dean Gate"]
       },
       "Pulchowk": {
-        "cords": [27.677698, 85.316286]
+        "Nepal Yatayat": ["Pulchowk"]
+
       },
       "Jawalakhel": {
-        "cords": [27.673218, 85.313999]
-      },
-      "ekantakuna": {
-        "cords": [27.666993, 85.308530]
+        "Nepal Yatayat": ["Pulchowk"]
       },
       "Manbhawan": {
         "cords": [27.672190, 85.315368]
