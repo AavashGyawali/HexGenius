@@ -1,0 +1,183 @@
+{
+    "Kalanki": {
+      "Bhaktapur Blue Bus": ["Khasi bazar"],
+      "Mahanagar Yatayat": ["Khasi bazar"],
+      "B1": []
+    },
+    "Khasi bazar": {
+        "Bhaktapur Blue Bus": ["Kalanki","Advance College"],
+        "Mahanagar Yatayat": ["Kalanki", "Advance College"]
+    },
+    "Advance College": {
+        "Bhaktapur Blue Bus": ["Khasi bazar", "Balkhu"],
+        "Mahanagar Yatayat": ["Khasi bazar", "Balkhu"]
+
+    },
+    "Balkhu": {
+        "Bhaktapur Blue Bus": ["Advance College", "Sanepa"],
+        "Mahanagar Yatayat": ["Advance College", "Sanepa"]
+
+    },
+    "Sanepa": {
+        "Bhaktapur Blue Bus": ["Balkhu", "Star Hospital"],
+        "Mahanagar Yatayat": ["Balkhu", "Star Hospital"]
+    },
+    "Star Hospital": {
+        "Bhaktapur Blue Bus": ["Sanepa", "Dhobighat"],
+        "Mahanagar Yatayat": ["Sanepa", "Dhobighat"]
+    },
+    "Dhobighat": {
+        "Bhaktapur Blue Bus": ["Star Hospital",  "Baghdol"],
+        "Mahanagar Yatayat": ["Star Hospital", "Baghdol"]
+
+    },
+    "Baghdol": {
+        "Bhaktapur Blue Bus": ["Dhobighat",  "Nakhkhu"],
+        "Mahanagar Yatayat": ["Dhobighat", "Nakhkhu"]
+    },
+    "Nakhkhu": {
+        "Bhaktapur Blue Bus": [ "Baghdol",  "Ekantakuna"],
+        "Mahanagar Yatayat": ["Baghdol", "Ekantakuna"]
+    },
+    "Ekantakuna": {
+        "Bhaktapur Blue Bus": [ "Nakhkhu",  "Kushunti"],
+        "Mahanagar Yatayat": ["Nakhkhu", "Kushunti"]
+    },
+    "Kushunti": {
+      "Bhaktapur Blue Bus": [ "Ekantakuna",  "Thasikhel"],
+      "Mahanagar Yatayat": ["Ekantakuna", "Thasikhel"]
+
+    },
+    "Thasikhel": {
+      "Bhaktapur Blue Bus": [ "Kushunti",  "Mahalaxmisthan"],
+      "Mahanagar Yatayat": ["Kushunti", "Mahalaxmisthan"]
+
+    },
+    "Mahalaxmisthan": {
+      "Bhaktapur Blue Bus": [ "Thasikhel",  "Talchikhela"],
+      "Mahanagar Yatayat": ["Thasikhel", "Talchikhela"]
+
+    },
+    "Talchikhela": {
+      "Bhaktapur Blue Bus": [  "Mahalaxmisthan",  "Chapagaun Dobato"],
+      "Mahanagar Yatayat": ["Mahalaxmisthan", "Chapagaun Dobato"]
+      
+    },
+    "Chapagaun Dobato": {
+      "Bhaktapur Blue Bus": [  "Talchikhela",  "Satdobato"],
+      "Mahanagar Yatayat": ["Talchikhela", "Satdobato"]
+
+    },
+    "Satdobato": {
+      "Bhaktapur Blue Bus": [ "Chapagaun Dobato",  "ANFA"],
+      "Mahanagar Yatayat": ["Chapagaun Dobato", "ANFA"]
+
+    },
+    "ANFA": {
+      "Bhaktapur Blue Bus": ["Satdobato",  "B And B"],
+      "Mahanagar Yatayat": ["Satdobato", "B And B"]
+    },
+    "B And B": {
+      "Bhaktapur Blue Bus": [ "ANFA",  "Gwarko"],
+      "Mahanagar Yatayat": ["ANFA", "Gwarko"]
+    },
+    "Gwarko": {
+      "Bhaktapur Blue Bus": ["B And B", "Kharibot"],
+      "Mahanagar Yatayat": ["B And B", "Kharibot"]
+    },
+    "Kharibot": {
+      "Bhaktapur Blue Bus": ["Gwarko", "Balkumari"],
+      "Mahanagar Yatayat": ["GWARKO", "Balkumari"]
+    },
+    "Balkumari": {
+      "Bhaktapur Blue Bus": ["Kharibot", "Koteshwor"],
+      "Mahanagar Yatayat": ["Kharibot", "Koteshwor"]
+    },
+    "Koteshwor": {
+      "Bhaktapur Blue Bus": ["Balkumari", "tinkune"],
+      "Mahanagar Yatayat": ["Balkumari", "tinkune"]
+    },
+    "Tinkune": {
+      "cords": [27.685891, 85.346119]
+    },
+    "Civil Hospital": {
+      "cords": [27.687462, 85.338667]
+    },
+    "Banseshwor": {
+      "cords": [27.688129, 85.335899]
+    },
+    "Babar Mahal": {
+      "cords": [27.692074, 85.324539]
+    },
+    "Aitighar": {
+      "cords": [27.693735, 85.321341]
+    },
+    "Tripureshwor": {
+      "cords": [27.693568, 85.314334]
+    },
+    "Teku": {
+      "cords": [27.696247, 85.306967]
+    },
+    "Kalimati": {
+      "cords": [27.698386, 85.299445]
+    },
+    "Soltee Mod": {
+      "cords": [27.696606, 85.293601]
+    },
+    "Thapathali": {
+        "cords": [27.693923, 85.319219]
+      },
+      "Kupandol": {
+        "cords": [27.687748, 85.316669]
+      },
+      "nabil bank(pulchowk)": {
+        "cords": [27.683449, 85.318695]
+      },
+      "ioe dean gate": {
+        "cords": [27.681275, 85.317711]
+      },
+      "Sajha Petrol Pump(pulchowk)": {
+        "cords": [27.679488, 85.316965]
+      },
+      "Pulchowk": {
+        "cords": [27.677698, 85.316286]
+      },
+      "Jawalakhel": {
+        "cords": [27.673218, 85.313999]
+      },
+      "ekantakuna": {
+        "cords": [27.666993, 85.308530]
+      },
+      "Manbhawan": {
+        "cords": [27.672190, 85.315368]
+      },
+      "kumaripati": {
+        "cords": [27.670635, 85.320437]
+      },
+      "Patan Hospital": {
+        "cords": [27.668426, 85.321674]
+      },
+      "lagankhel": {
+        "cords": [27.666831, 85.323354]
+      },
+      "satdobato": {
+        "cords": [27.658748, 85.324695]
+      },
+      "pulchowk": {
+        "cords": [27.677859, 85.316262]
+      },
+      "gabahal": {
+        "cords": [27.674248, 85.321018]
+      },
+      "Mangal Bazar": {
+        "cords": [27.672623, 85.324897]
+      },
+      "tyagal": {
+        "cords": [27.669695, 85.328107]
+      },
+      "gwarko": {
+        "cords": [27.666710, 85.332028]
+      }
+
+  }
+  

@@ -5,6 +5,7 @@ import {
   TileLayer,
   useMap,
   useMapEvents,
+  //   useMapEvents,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -25,10 +26,7 @@ const GetCods: React.FC<Props> = ({ setAddress }) => {
   const markerRef = useRef<L.Marker<any>>(null);
   const [waypoints, setWaypoints] = useState<LatLng[]>([center]);
   L.Routing.control({
-    waypoints: [
-			...waypoints,
-      L.latLng(center.lat, center.lng),
-    ],
+    waypoints: [...waypoints, L.latLng(center.lat, center.lng)],
     lineOptions: {
       styles: [{ color: "black" }],
       extendToWaypoints: false,
@@ -49,15 +47,13 @@ const GetCods: React.FC<Props> = ({ setAddress }) => {
       console.log(isBusStationOnRoute);
     });
 
-     useMapEvents({
-       click(e) {
-         console.log(e.latlng);
+  useMapEvents({
+    click(e) {
+      console.log(e.latlng);
 
-         setWaypoints([...waypoints,
-           L.latLng(e.latlng.lat, e.latlng.lng)
-         ]);
-       },
-     });
+      setWaypoints([...waypoints, L.latLng(e.latlng.lat, e.latlng.lng)]);
+    },
+  });
 
   return (
     <Marker position={center} ref={markerRef} draggable={false}>
