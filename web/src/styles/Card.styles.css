@@ -1,0 +1,12 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: azure;
+    width: 6%;
+}
+.card>div{
+    font-size: 10px;
+
+}

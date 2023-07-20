@@ -1,8 +1,12 @@
 import React from 'react'
+import Card from './Card'
 
 function RouteDetail() {
   return (
-    <div>RouteDetail</div>
+    <div className='route'>
+        <div className='number'>Route</div>
+        <Card/>
+    </div>
   )
 }
 

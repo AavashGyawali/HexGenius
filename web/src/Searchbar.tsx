@@ -1,6 +1,5 @@
 import React from 'react'
 import "./styles/Searchbar.style.css"
-
 const Searchbar = () => {
   return (
     <div className='box'>

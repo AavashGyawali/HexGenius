@@ -10,11 +10,17 @@
     padding: 20px 10px;
     color: #56328C;
     font-weight: bold;
+
 }
 .route{
     display: flex;
-    height: 10vh;
+    height: 15vh;
+    padding: 10px;
+    background-color: #E9E9E9;
+    box-shadow: 0 0 12px #E9E9E9;
 }
 .number{
-    
+    width: 150px;
+    text-align: center;
+    align-self: center;
 }
