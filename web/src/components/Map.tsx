@@ -35,16 +35,19 @@ const GetCods: React.FC<Props> = ({ setAddress }) => {
     addWaypoints: false,
   })
     .addTo(map)
-    .on("routesfound", function (e) {
+    .on("routesfound", async function (e) {
+			const stationsObj = (await import("../../stations.json")).default;
+			const result = [];
       const route = e.routes[0]; // Get the first (and usually the only) route
       const coordinates = route.coordinates; // Array of route coordinates
       const coordinatesArray = coordinates.map((c: any) => [c.lat, c.lng]);
-      const busStationCoords = [27.67477, 86.36107];
-      const isBusStationOnRoute = isPointOnPolyline(
-        busStationCoords,
-        coordinatesArray
-      );
-      console.log(isBusStationOnRoute);
+			const stations = Object.keys(stationsObj);
+			for(let station of stations) {
+				if(isPointOnPolyline(stationsObj[station].cords, coordinatesArray)) {
+					result.push(station);
+				}
+			}
+			console.log(result);
     });
 
   useMapEvents({
