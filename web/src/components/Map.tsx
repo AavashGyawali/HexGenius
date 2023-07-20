@@ -20,6 +20,20 @@ interface Props {
 
 const center = L.latLng(27.7172, 85.324);
 
+const compare = (obj1: any, obj2: any) => {
+	return obj2.value - obj1.value;
+};
+
+const sort_data = (current: any, stationsObj: any) => {
+	const result = [];
+	for(let key in stationsObj) {
+		const distance_km = haversineDistance(current.lat, current.lng, stationsObj[key].cords.lat, stationsObj[key].cords.lng);
+		result.push({ [key]: distance_km });
+	}
+	result.sort(compare);
+	return result;
+};
+
 const GetCods: React.FC<Props> = ({ setAddress }) => {
   const map = useMap();
 
@@ -38,6 +52,7 @@ const GetCods: React.FC<Props> = ({ setAddress }) => {
     .on("routesfound", async function (e) {
 			const stationsObj = (await import("../../stations.json")).default;
 			const result = [];
+			console.log(e);
       const route = e.routes[0]; // Get the first (and usually the only) route
       const coordinates = route.coordinates; // Array of route coordinates
       const coordinatesArray = coordinates.map((c: any) => [c.lat, c.lng]);
@@ -46,6 +61,7 @@ const GetCods: React.FC<Props> = ({ setAddress }) => {
 				if(isPointOnPolyline(stationsObj[station].cords, coordinatesArray)) {
 					result.push(station);
 				}
+				//console.log(sort_data({ lat: coordinatesArray[0].lat, lng: coordinatesArray[0].lng }, stationsObj));
 			}
 			console.log(result);
     });
